@@ -24,8 +24,7 @@ public class CountSetBits {
     }
 
     public static void main (String[] args){
-        int n = 0;
-        System.out.println(findSetBits(n));
+
 
     }
 }
