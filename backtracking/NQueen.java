@@ -2,7 +2,7 @@ package backtracking;
 
 /* Java program to solve N Queen Problem using
 backtracking */
-public class NQueen {
+public class NQueen{
     final int N = 4;
 
     /* A utility function to print solution */

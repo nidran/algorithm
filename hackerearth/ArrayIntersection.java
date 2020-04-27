@@ -1,25 +1,41 @@
-package Utility;
-
+package hackerearth;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.StringTokenizer;
 
-class Main {
+public class ArrayIntersection {
     public static void main(String[] args) {
-        FastReader s = new FastReader();
-        int n = s.nextInt();
-        int k = s.nextInt();
-        int count = 0;
-        while (n-- > 0) {
-            int x = s.nextInt();
-            if (x % k == 0)
-                count++;
+
+        ArrayIntersection.FastReader s = new ArrayIntersection.FastReader();
+        int tc = s.nextInt();
+
+        while (tc-- > 0) {
+            int n = s.nextInt();
+            int m = s.nextInt();
+            HashSet<Integer> nySet = new HashSet<>();
+            int count = 0;
+            for (int i = 0; i < n; i++) {
+
+                nySet.add(s.nextInt());
+            }
+            HashSet<Integer> mySet = new HashSet<>();
+            for (int i = 0; i < m; i++) {
+                int temp = s.nextInt();
+                if (nySet.contains(temp))
+                    mySet.add(temp);
+
+            }
+
+            System.out.println(mySet.size());
         }
-        System.out.println(count);
+
+
     }
+
 
     static class FastReader {
         BufferedReader br;
