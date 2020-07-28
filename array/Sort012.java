@@ -1,6 +1,4 @@
-package array;// { Driver Code Starts
-//Initial template for Java
-
+package array;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,7 +7,9 @@ import java.io.InputStreamReader;
  * Given an array of size N containing 0s, 1s, and 2s; sort the array in ascending order.
  * <p>
  * Input:
- * First line of input contains number of testcases T. For each testcase, there will be two lines, first of which will contain N. The second lines contains the elements of the array.
+ * First line of input contains number of testcases T.
+ * For each testcase, there will be two lines, first of which will contain N.
+ * The second lines contains the elements of the array.
  * <p>
  * Output:
  * Print sorted array.
@@ -66,10 +66,9 @@ class Sort012 {
                 i++;
             }
         }
-        // code here
+
     }
 
-// { Driver Code Starts.
 
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
